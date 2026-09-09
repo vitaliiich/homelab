@@ -101,5 +101,5 @@ Rows are the source, columns the destination:
 3. Tag the VLAN on the trunk ports between `freya`, core-switch and access-switch.
 4. Tag it on the AP trunk if it needs wireless, and new subnet into Networks and PSSK list in the SSID config.
 5. Add firewall rules. Start with deny-all, then add exceptions one at a time (e.g. Technitium DNS Servers).
-6. Update the matrix above, [topology.md](topology.md), and the [docs/network/diagrams/topology.svg](Excalidraw diagram).
+6. Update the matrix above, [topology.md](topology.md), and the [diagrams/topology.svg](Excalidraw diagram).
 7. Verify from a client in the new segment: gateway reachable, DNS resolving, and inter-VLAN traffic blocked in both directions.
