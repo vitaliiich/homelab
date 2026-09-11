@@ -41,17 +41,25 @@ Guests running on the Proxmox cluster are listed in [vlans.md](vlans.md) alongsi
 
 ## Physical links
 
+[![Physical network links](diagrams/physical-links.svg)](diagrams/physical-links.svg)
+
+Source: [`physical-links.excalidraw`](diagrams/physical-links.excalidraw)
+
 | From | Port | To | Port | Mode | VLANs | Bandwidth
 |------|------|----|------|------|-------|-------|
 | ISP's ONT | 0 | freya | em0 (WAN) | access | - | 1 Gbps |
 | freya | ixl0 (LAN) | core-switch | 1 | trunk | all tagged, mgmt untagged | 10 Gbps |
 | core-switch | 8 | access-switch | 10 | trunk | all tagged, mgmt untagged | 10 Gpbs |
-| access-switch | 7 | U7 Lite AP | 0 | trunk | 10, 20, 40 tagged, mgmt untagged | 2.5 Gpbs |
 | access-switch | 1 | thor | nic0 | trunk | mgmt untagged, 30 tagged | 1 Gbps |
 | access-switch | 2 | odin | nic0 | trunk | mgmt untagged, 30 tagged | 1 Gbps |
 | access-switch | 3 | loki | nic0 | trunk | mgmt untagged, 30 tagged | 1 Gbps |
+| access-switch | 6 | homeassistant | nic0 | access | 30 | 1 Gbps |
+| access-switch | 7 | U7 Lite AP | 0 | trunk | 10, 20, 40 tagged, mgmt untagged | 2.5 Gpbs |
+| access-switch | 8 | Personal Workstation | USB-C Hub RJ-45 | access | mgmt | 1 Gbps |
 
 The Proxmox nodes take a trunk rather than an access port so guests can be optionally attached to any VLAN by setting a tag on the virtual NIC, with untagged (native) - mgmt subnet. The bridge is VLAN-aware on each node.
+
+#### Important! Ports `4,5,8` on the `access-switch` are currently configured in *access mode*, which means they carry **Mgmt** subnet on them by default. 
 
 ---
 
