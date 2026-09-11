@@ -47,7 +47,7 @@ OPNsense handles routing and firewalling between segments. Each VLAN is a separa
 - **Remote access:** NetBird VPN, no ports/services exposed to the internet
 <!-- TODO: - **Monitoring:** TODO -->
 
-Network Topology: [docs/network/topology.md](/docs/network/topology.md) | Details: [docs/network/vlans.md](docs/network/vlans.md) | Configs: [network/opnsense/](network/opnsense/)
+Network Topology: [docs/network/topology.md](/docs/network/topology.md) | Inter-VLAN Rules: [docs/network/vlans.md](docs/network/vlans.md) | Configs: [network/](network/)
 
 ---
 
