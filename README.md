@@ -1,5 +1,7 @@
 # Homelab
 
+[![Homelab rack, front view](docs/hardware/images/front-view.webp)](docs/hardware/images/front-view.webp)
+
 A three-node Proxmox cluster, a VLAN-segmented network, and the services running in the k3s cluster on top of them - built, broken, fixed, and documented.
 
 <!-- Add once CI exists:
