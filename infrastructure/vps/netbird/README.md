@@ -25,7 +25,7 @@ Docker Compose. Files in this directory:
 | `docker-compose.yml` | Deployment definition |
 | `config.yaml` | Combined server configuration (management, signal, relay, STUN) |
 | `dashboard.env.example` | Example .env for **dashboard** service |
-| `proxy.env.example` | Example .env for **dashboard** service |
+| `proxy.env.example` | Example .env for **proxy** service |
 
 
 Edit .env files if needed.
