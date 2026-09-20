@@ -16,7 +16,7 @@ Follows the [official upgrade guide](https://docs.netbird.io/selfhosted/maintena
 
 **Config files:**
 ```bash
-mkdir backup
+mkdir -p backup
 cp docker-compose.yml dashboard.env config.yaml backup/
 ```
 
