@@ -86,6 +86,7 @@ Containers run rootless under Podman, managed as systemd units via quadlets. Gue
 Actively built.
 
 Current TODO List:
+- [ ] Fix the topology.svg and physical-links.svg image sizes
 - [ ] Setup a k3s cluster on the Proxmox nodes
 - [ ] Move MariaDB app inside the Technitium Cluster App
 - [ ] Move Karakeep from Podman quadlet to Kubernetes
