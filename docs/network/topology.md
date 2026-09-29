@@ -41,7 +41,7 @@ Guests running on the Proxmox cluster are listed in [vlans.md](vlans.md) alongsi
 
 ## Physical links
 
-[![Physical network links](diagrams/physical-links.svg)](diagrams/physical-links.svg)
+[![Physical network links](diagrams/physical-links.webp)](diagrams/physical-links.webp)
 
 Source: [`physical-links.excalidraw`](diagrams/physical-links.excalidraw)
 
