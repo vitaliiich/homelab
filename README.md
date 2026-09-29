@@ -13,7 +13,7 @@ A three-node Proxmox cluster, a VLAN-segmented network, and the services running
 
 ## Topology
 
-![Network topology](docs/network/diagrams/topology.svg)
+![Network topology](docs/network/diagrams/topology.webp)
 > Written breakdown: [docs/network/topology.md](docs/network/topology.md)
 
 ---
@@ -86,8 +86,8 @@ Containers run rootless under Podman, managed as systemd units via quadlets. Gue
 Actively built.
 
 Current TODO List:
-- [ ] Fix the topology.svg and physical-links.svg image sizes
-- [ ] Setup a k3s cluster on the Proxmox nodes
+- [x] ~~Fix the topology.svg and physical-links.svg image sizes~~
+- [ ] Setup a k8s cluster on the Proxmox nodes
 - [ ] Move MariaDB app inside the Technitium Cluster App
 - [ ] Move Karakeep from Podman quadlet to Kubernetes
 - [ ] Ansible roles for base hardening, replacing the manual cloud-init steps

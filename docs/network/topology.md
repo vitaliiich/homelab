@@ -8,7 +8,7 @@ VLAN-level detail (subnets, DHCP scopes, firewall policy, which device belongs w
 
 ## Diagram
 
-[![Network topology](diagrams/topology.svg)](diagrams/topology.svg)
+[![Network topology](diagrams/topology.webp)](diagrams/topology.webp)
 
 Source: [`diagrams/topology.excalidraw`](diagrams/topology.excalidraw)
 
